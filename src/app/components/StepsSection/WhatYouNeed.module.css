@@ -1,0 +1,115 @@
+/* WhatYouNeed.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.instructionsSection {
+  background: url('/step-bg.webp') center/cover no-repeat, 
+              linear-gradient(135deg, #4b2ae6 0%, #6b5ae0 100%);
+  padding: 40px;
+  border-radius: 24px;
+  width: 1120px;
+  height: 520px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.leftContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.rightContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -20px; /* Для перекрытия */
+  transform: rotate(1deg); /* Небольшой наклон */
+}
+
+.step:nth-child(even) {
+  transform: rotate(-1deg); /* Противоположный наклон для четных шагов */
+}
+
+.stepNumber {
+  font-size: 24px;
+  font-weight: bold;
+  background: #fff;
+  color: #6b5ae0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stepText {
+  flex: 1;
+}
+
+.stepText h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+.stepText p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.logo img {
+  max-width: 100px;
+}

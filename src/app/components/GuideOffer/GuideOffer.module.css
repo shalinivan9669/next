@@ -1,0 +1,100 @@
+.guideSection {
+     
+    background: url('/bg.jpg') center/cover no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 698px;
+    margin-top: 72px;
+    display: flex;
+    position: relative;
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px; /* Увеличиваем ширину */
+    width: 100%;
+    position: relative;
+    gap: 80px; /* Увеличиваем отступы между элементами */
+}
+
+.imageLeft, .imageRight {
+    flex: 1;
+    max-width: 250px; /* Увеличиваем размер изображения */
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.imageRight {
+    transform: rotate(3deg);
+}
+
+.imageLeft img, .imageRight img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+}
+
+.textContent {
+    flex: 2;
+    text-align: center;
+    padding: 0 60px; /* Увеличиваем отступы */
+    position: relative;
+}
+
+.title {
+    font-size: 32px; /* Увеличиваем размер шрифта */
+    font-weight: bold;
+    margin-bottom: 20px; /* Увеличиваем отступ снизу */
+    color: #111111;
+    position: relative;
+}
+
+.starLeft {
+    position: absolute;
+    left: -80px; /* Сдвигаем звёздочку дальше влево */
+    top: -20px;
+    width: 48px;
+    height: 48px;
+    background: url('/star.svg') no-repeat center;
+    background-size: cover;
+    animation: float 3s ease-in-out infinite;
+}
+
+.starRight {
+    position: absolute;
+    right: -70px; /* Сдвигаем звёздочку дальше вправо */
+    top: 30px;
+    width: 48px;
+    height: 48px;
+    background: url('/star2.svg') no-repeat center;
+    background-size: cover;
+    animation: float 3s ease-in-out infinite alternate;
+}
+
+.subtitle {
+    font-size: 20px; /* Увеличиваем размер шрифта */
+    line-height: 1.6;
+    margin-bottom: 30px; /* Увеличиваем отступ снизу */
+    color: #666666;
+}
+
+.ctaButton {
+    background-color: #5C24FF;
+    color: #fff;
+    font-size: 18px; /* Увеличиваем размер шрифта */
+    padding: 14px 30px; /* Увеличиваем отступы */
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 22px rgba(92, 36, 255, 0.32);
+}
+
+.ctaButton:hover {
+    background-color: #7000FF;
+    box-shadow: 0px 6px 24px rgba(92, 36, 255, 0.4);
+}

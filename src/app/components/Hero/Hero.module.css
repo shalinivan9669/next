@@ -1,0 +1,180 @@
+/* Hero.module.css */
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:
+      url('/background-grid.webp') center/cover no-repeat,
+      linear-gradient(135deg, rgba(92, 36, 255, 0.8) 0%, rgba(112, 0, 255, 0.8) 100%);
+    padding: 20px;
+}
+  
+  .centerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .content {
+    text-align: center;
+   
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logoWrapper {
+    margin-bottom: 24px;
+  }
+  
+  .logo {
+    width: 225px;  
+  }
+  
+  .imageWrapper {
+    display:flex;
+    justify-content:center;
+    position: relative;  
+    width: 100%;
+    max-width: 600px;
+    height: 300px;  
+    margin-bottom: 142px;
+  }
+  
+  .frame {
+    position: absolute;  
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+   
+    height: auto;
+  }
+  
+  .frame1 {
+    z-index: 1;
+    transform: translate(-50px, 0px);
+  }
+  
+  .frame2 {
+    z-index: 2;
+    transform: translate(-20px, 0px);
+  }
+  
+  .frame3 {
+    z-index: 3;
+    transform: translate(40px, -20px);
+  }
+  
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .headingWrapper {
+    max-width: 736px;
+    margin-bottom: 16px;
+  }
+  
+  .title {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 16px;
+  }
+  
+  .title span {
+    color: #5C24FF;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .title span::after {
+    content: '✦';
+    font-size: 20px;
+    color: #5C24FF;
+    position: absolute;
+    top: -10px;
+    right: -18px;
+  }
+  
+  .descriptionWrapper {
+    max-width: 556px;
+    margin-bottom: 32px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-align: center;
+    
+  }
+  
+  .subtitle span {
+    font-weight: 700;
+    color: #5C24FF;
+  }
+  
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .ctaButton {
+    width: 151px;
+    height: 56px;
+    border-radius: 100px;
+    background-color: #5C24FF;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 22px rgba(92, 36, 255, 0.32);
+    transition: all 0.3s ease;
+    padding: 0 24px;
+  }
+  
+  .ctaButton:hover {
+    background-color: #7000FF;
+  }
+  
+
+  .languageSwitch {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+}
+
+.languageButton {
+    width: 68px;
+    height: 56px;
+    border-radius: 100px;
+    background-color: #fff;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 22px rgba(92, 36, 255, 0.32);
+    transition: all 0.3s ease;
+    padding: 0 24px;
+}
+
+.languageButton:hover {
+    background-color: #7000FF;
+}

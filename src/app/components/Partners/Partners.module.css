@@ -1,0 +1,55 @@
+/* Partners.module.css */
+
+.partnersSection {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  gap: 161px; /* Разделяет текст и логотипы */
+  position: relative;
+  width: 100%;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1120.25px; /* Точная ширина линии */
+  height: 1px;
+  background-color: rgba(17, 17, 17, 0.12); /* Цвет с прозрачностью */
+}
+
+.textWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -0.02em;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
